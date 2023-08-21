@@ -13,6 +13,7 @@ const { userJoin, getCurrentUser, userLeave, getUserRooms } = require('./utils/u
 
 
 app.use('/', express.static(__dirname + '/public'));
+
 io.on('connection', (socket) => {
     
     socket.on('join_room', ({ username, room }) => {

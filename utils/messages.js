@@ -3,7 +3,7 @@ function formatMesaage(username, text){
     return {
         username,
         text,
-        time: moment().format('h:mm, a')
+        time: new Date().toTimeString().substring(0,8)
     }
 }
 
